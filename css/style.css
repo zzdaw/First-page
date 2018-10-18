@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Prata', serif;
 }
 
 header {
@@ -291,14 +292,390 @@ div.p img {
     }
 }
 
-/* @keyframes text {
-    0% {
-        right: -50%;
+/* main section */
+main {
+    height: 240vh;
+    overflow: hidden;
+}
+
+main h2.more {
+    display: none;
+    font-size: 1rem;
+    text-align: center;
+    color: rgb(87, 138, 196);
+    font-family: 'Prata', serif;
+}
+
+h1.works {
+    font-size: 2.4rem;
+    margin-left: 2%;
+    margin-top: 2%;
+    color: rgb(57, 204, 196);
+    font-family: 'Prata', serif;
+}
+
+div.first h2 {
+    margin-top: 3%;
+    font-size: 1rem;
+    width: 50%;
+    transform: translateY(50%);
+    color: rgb(46, 151, 146);
+    background-color: rgb(113, 226, 220);
+}
+
+div.first img {
+    height: 43vh;
+    width: 100%;
+    background-size: 100% auto;
+}
+
+div.second {
+    height: 25vh;
+}
+
+div.second h1 {
+    margin-left: 2%;
+    color: rgb(18, 117, 113);
+}
+
+div.second p {
+    margin-left: 3%;
+    margin-top: 3%;
+    color: rgb(119, 172, 169);
+    font-family: 'Prata', serif;
+}
+
+div.second h2 {
+    margin-left: 3%;
+    margin-top: 2%;
+    font-family: 'Prata', serif;
+    color: rgb(62, 224, 217);
+}
+
+div.third {
+    height: 25vh;
+}
+
+div.third h1 {
+    margin-left: 2%;
+    color: rgb(18, 117, 113);
+}
+
+div.third p {
+    margin-left: 3%;
+    margin-top: 3%;
+    color: rgb(119, 172, 169);
+    font-family: 'Prata', serif;
+}
+
+div.third h2 {
+    margin-left: 3%;
+    margin-top: 2%;
+    font-family: 'Prata', serif;
+    color: rgb(62, 224, 217);
+}
+
+div.fourth h2 {
+    margin-top: 3%;
+    font-size: 1rem;
+    width: 50%;
+    transform: translateY(50%);
+    color: rgb(46, 151, 146);
+    background-color: rgb(113, 226, 220);
+}
+
+div.fourth img {
+    height: 43vh;
+    width: 100%;
+    background-size: 100% auto;
+}
+
+@media (orientation: portrait) and (min-width: 410px) {
+    h1.works {
+        font-size: 2.8rem;
+    }
+
+    div.first h2 {
+        font-size: 1.4rem;
+    }
+
+    div.fourth h2 {
+        font-size: 1.4rem;
+    }
+
+    div.second h1 {
+        font-size: 2rem;
+    }
+
+    div.second p {
+        font-size: 1.4rem;
+    }
+
+    div.third h1 {
+        font-size: 2rem;
+    }
+
+    div.third p {
+        font-size: 1.4rem;
     }
 }
 
-@keyframes bigH {
-    0% {
-        height: 45%;
+@media (orientation: portrait) and (min-width: 768px) {
+    h1.works {
+        font-size: 3rem;
     }
-} */
+
+    div.first h2 {
+        font-size: 1.6rem;
+    }
+
+    div.fourth h2 {
+        font-size: 1.6rem;
+    }
+
+    div.second h1 {
+        font-size: 2.4rem;
+    }
+
+    div.second p {
+        font-size: 1.8rem;
+    }
+
+    div.second h2 {
+        font-size: 2rem;
+    }
+
+    div.third h1 {
+        font-size: 2.4rem;
+    }
+
+    div.third p {
+        font-size: 1.8rem;
+    }
+
+    div.third h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 640px) {
+    main h2.more {
+        display: block;
+        font-size: 0.9rem;
+        margin-top: 1%;
+        text-align: center;
+        color: rgb(87, 138, 196);
+        font-family: 'Prata', serif;
+    }
+
+    h1.works {
+        font-size: 2.8rem;
+        margin-left: 20%;
+        margin-top: 2%;
+        color: rgb(57, 204, 196);
+        font-family: 'Prata', serif;
+    }
+
+    section {
+        display: flex;
+        justify-content: center;
+    }
+
+    div.first {
+        flex-basis: 30%;
+        height: 65vh;
+    }
+
+    div.first h2 {
+        margin-top: 3%;
+        font-size: 0.9rem;
+        width: 60%;
+        transform: rotate(-90deg) translateX(-100%);
+        transform-origin: 0% 50%;
+        color: rgb(46, 151, 146);
+        background-color: rgb(113, 226, 220);
+    }
+
+    div.first img {
+        height: 55vh;
+        flex-basis: 30%;
+        background-size: 100% auto;
+    }
+
+    div.fourth {
+        flex-basis: 30%;
+        height: 65vh;
+    }
+
+    div.fourth h2 {
+        margin-top: 3%;
+        font-size: 0.9rem;
+        width: 60%;
+        transform: rotate(90deg) translate(10%, -500%);
+        transform-origin: 0% 50%;
+        color: rgb(46, 151, 146);
+        background-color: rgb(113, 226, 220);
+    }
+
+    div.fourth img {
+        height: 55vh;
+        flex-basis: 30%;
+        background-size: 100% auto;
+    }
+
+    div.second {
+        height: 65vh;
+        flex-basis: 30%;
+        margin-top: 5%;
+        margin-left: 3%;
+    }
+
+    div.second h1 {
+        margin-top: 2%;
+        margin-left: 3%;
+        font-size: 1.2rem;
+        color: rgb(18, 117, 113);
+    }
+
+    div.second p {
+        margin-left: 3%;
+        margin-top: 4%;
+        font-size: 0.8rem;
+        color: rgb(119, 172, 169);
+        font-family: 'Prata', serif;
+    }
+
+    div.second h2 {
+        margin-left: 3%;
+        margin-top: 2%;
+        font-size: 0.8rem;
+        font-family: 'Prata', serif;
+        color: rgb(62, 224, 217);
+    }
+
+    div.third {
+        height: 65vh;
+        flex-basis: 30%;
+        margin-top: 5%;
+        margin-left: 3%;
+    }
+
+    div.third h1 {
+        margin-top: 2%;
+        margin-left: 3%;
+        font-size: 1.2rem;
+        color: rgb(18, 117, 113);
+    }
+
+    div.third p {
+        margin-left: 3%;
+        margin-top: 4%;
+        font-size: 0.8rem;
+        color: rgb(119, 172, 169);
+        font-family: 'Prata', serif;
+    }
+
+    div.third h2 {
+        margin-left: 3%;
+        margin-top: 2%;
+        font-size: 0.8rem;
+        font-family: 'Prata', serif;
+        color: rgb(62, 224, 217);
+    }
+
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+    main h2.more {
+        font-size: 1rem;
+    }
+
+    h1.works {
+        font-size: 3rem;
+    }
+
+    section {
+        display: flex;
+        justify-content: center;
+    }
+
+    div.first {
+        flex-basis: 30%;
+        height: 65vh;
+    }
+
+    div.first h2 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    div.fourth {
+        flex-basis: 30%;
+        height: 65vh;
+    }
+
+    div.fourth h2 {
+        font-size: 0.9rem;
+        transform: rotate(90deg) translate(0%, -1600%);
+    }
+
+    div.second {
+        height: 65vh;
+        flex-basis: 30%;
+        margin-top: 5%;
+        margin-left: 3%;
+    }
+
+    div.second h1 {
+        margin-top: 2%;
+        margin-left: 3%;
+        font-size: 2.2rem;
+        color: rgb(18, 117, 113);
+    }
+
+    div.second p {
+        font-size: 1.2rem;
+    }
+
+    div.second h2 {
+        font-size: 1.2rem;
+    }
+
+    div.third h1 {
+        font-size: 2.2rem;
+    }
+
+    div.third p {
+        font-size: 1.2rem;
+    }
+
+    div.third h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (orientation: landscape) and (min-width: 1366px) {
+    main h2.more {
+        font-size: 1.2rem;
+    }
+
+    h1.works {
+        font-size: 3.4rem;
+    }
+
+    section {
+        display: flex;
+        justify-content: center;
+    }
+
+    div.fourth {
+        flex-basis: 30%;
+        height: 65vh;
+    }
+
+    div.fourth h2 {
+        font-size: 0.9rem;
+        text-align: center;
+        transform: rotate(90deg) translate(0%, -2150%);
+    }
+}
