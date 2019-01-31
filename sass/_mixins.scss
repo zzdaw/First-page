@@ -1,0 +1,33 @@
+@mixin positionHeaderDiv($item1) {
+    flex-basis: $item1;
+    position: relative;
+}
+
+@mixin settingHeadings($bottom, $right, $fontSize, $fontColor) {
+    position: absolute;
+    bottom: $bottom;
+    right: $right;
+    z-index: 1;
+    font-size: $fontSize;
+    color: $fontColor;
+}
+
+@mixin settingImg ($bottom, $left, $height) {
+    position: absolute;
+    bottom: $bottom;
+    left: $left;
+    height: $height;
+}
+
+@mixin settingsForText($marginL, $marginT, $color) {
+    margin-left: $marginL;
+    margin-top: $marginT;
+    color: $color;
+}
+
+@mixin settingsForTextLandscape($marginL, $marginT, $fontSize, $color) {
+    margin-left: $marginL;
+    margin-top: $marginT;
+    font-size: $fontSize;
+    color: $color;
+}
