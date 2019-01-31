@@ -1,3 +1,3 @@
 # First-page
-First page with HTML, CSS and JS
+First page with HTML, CSS and SASS.
 https://zzdaw.github.io/First-page/
